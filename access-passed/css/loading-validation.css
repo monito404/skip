@@ -1,0 +1,78 @@
+.loadingContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    overflow-y: auto;
+    margin-top: 64px;
+    padding-bottom: 100px;
+    padding-inline: 20px;
+}
+
+.loadingContainer .mainSectionContainer {
+    max-width: 350px;
+    width: 100%;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+    position: relative;
+    padding: 60px 0;
+    background-color: white;
+    margin-top: 15vh;
+    border-radius: 4px;
+}
+
+.loadingContainer .mainSectionWrapper{
+    margin: 0 auto;
+    padding-inline: 25px;
+}
+
+.loadingContainer .mainSectionWrapper h1{
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.loadingContainer .logo_nequi_animado{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.loadingContainer .logo_nequi_animado img{
+    max-width: 150px;
+    width: 100%;
+    height: auto;
+}
+
+.loadingContainer .mainSectionWrapper .wait-msg{
+    margin-top: 20px;
+    font-size: .875em;
+    font-weight: 600;
+    color: var(--purple-primary);
+    text-align: center;
+}
+
+.loadingContainer .mainSectionWrapper .info-msg{
+    margin-top: 20px;
+    font-size: .875rem;
+    font-weight: 600;
+    color: var(--purple-primary);
+    text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    .loadingContainer{
+        background: url(../assets/images/pink_background.png) right no-repeat #FBE5F2;
+    }
+}

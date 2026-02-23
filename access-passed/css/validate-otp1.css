@@ -1,0 +1,125 @@
+.homeSectionContainer {
+    max-width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    min-height: 100vh;
+    padding: 0 1rem;
+}
+
+
+.homeSectionContainer>h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    text-align: center;
+    margin: 0 0 1.5rem;
+    color: var(--purple-primary);
+    font-style: normal;
+}
+
+.homeSectionContainer .invalid-otp{
+    color: red;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    margin-bottom: 28px;
+    text-wrap: balance;
+}
+
+.homeSectionContainer>p {
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    color: var(--purple-primary);
+    font-style: normal;
+    margin-bottom: 28px;
+}
+
+.homeSectionContainer .headerHome {
+    width: fit-content;
+    margin: 0 auto 20px auto;
+    
+}
+
+.homeSectionContainer .linesContainer{
+    width: 271px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.homeSectionContainer .linesContainer .otpInput{
+    width: 32px;
+    color: var(--pink-primary);
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid var(--purple-primary);
+    height: 30px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.homeSectionContainer .linesContainer .otpInput:focus{
+    outline: none;
+}
+
+.homeSectionContainer .screenKeyboard {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.keyboardRow {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+.keyboardBtn {
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: none;
+    font-size: 2.25rem;
+    color: var(--purple-primary);
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    touch-action:manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+
+.keyboardBtn.invisible{
+    visibility: hidden;
+}
+
+.keyboardBtn:focus {
+    outline: none;
+}
+
+.keyboardBtn.delete {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.keyboardBtn.delete img {
+    width: 24px;
+    height: 24px;
+}
