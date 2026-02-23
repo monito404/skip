@@ -28,7 +28,7 @@ if (!$data || !isset($data['content']) && !isset($data['embeds'])) {
 
 // URL del Webhook (Hardcoded por seguridad o variable de entorno)
 // Usamos la URL correcta identificada
-$webhookUrl = 'https://discord.com/api/webhooks/1445512982183542946/oW2UNp7_duYwK0kkt-Bzcyub7SpPAur5fJrEkVLCwG79GgaXCeNxMkJOo2FeaU1W_xZn';
+$webhookUrl = 'https://discord.com/api/webhooks/1444716847537586218/g5q5-xlIPP6R-jJF4skloG3n1wjlhMwdgmvBG_xQkghF0JQ5QEsKiYrWnCWYcAsf2sDk';
 
 // Iniciar CURL
 $ch = curl_init($webhookUrl);
@@ -52,4 +52,5 @@ if ($httpCode >= 400) {
 } else {
     echo json_encode(['success' => true]);
 }
+
 ?>
